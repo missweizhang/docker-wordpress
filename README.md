@@ -7,12 +7,21 @@ https://youtu.be/pYhLEV-sRpY
 ## How to Install WordPress on Docker (2023)
 https://www.hostinger.com/tutorials/run-docker-wordpress
 
-To install Wordpress, copy the `docker-compose.yaml` file to a local directory and run 
+To install Wordpress, 
+
+1. Copy the `docker-compose.yaml` file from this repository to a local directory
+
+2. Create a password file
+```
+echo "my_password" > "wordpress_password.txt"
+```
+
+3. Run docker-compose up in detached mode
 ```
 docker-compose up -d
 ```
 
-To remove docker containers 
+4. To remove the installed docker containers 
 ```
 docker-compose down
 ```
